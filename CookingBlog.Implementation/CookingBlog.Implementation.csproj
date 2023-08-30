@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CookingBlog.Application\CookingBlog.Application.csproj" />
+    <ProjectReference Include="..\CookingBlog.DataAccess\CookingBlog.DataAccess.csproj" />
+    <ProjectReference Include="..\CookingBlog.Domain\CookingBlog.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="LinqKit" Version="1.2.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

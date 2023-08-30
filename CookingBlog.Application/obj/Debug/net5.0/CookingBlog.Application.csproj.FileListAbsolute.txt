@@ -1,0 +1,17 @@
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\bin\Debug\net5.0\CookingBlog.Application.deps.json
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\bin\Debug\net5.0\CookingBlog.Application.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\bin\Debug\net5.0\CookingBlog.Application.pdb
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\bin\Debug\net5.0\CookingBlog.Domain.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\bin\Debug\net5.0\CookingBlog.Domain.pdb
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\CookingBlog.Application.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\CookingBlog.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\CookingBlog.Application.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\CookingBlog.Application.AssemblyInfo.cs
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\CookingBlog.Application.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\CookingBlog.Application.csproj.CopyComplete
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\CookingBlog.Application.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\refint\CookingBlog.Application.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\CookingBlog.Application.pdb
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\obj\Debug\net5.0\ref\CookingBlog.Application.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\bin\Debug\net5.0\CookingBlog.DataAccess.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Application\bin\Debug\net5.0\CookingBlog.DataAccess.pdb

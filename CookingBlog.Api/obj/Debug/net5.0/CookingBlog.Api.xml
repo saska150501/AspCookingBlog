@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CookingBlog.Api</name>
+    </assembly>
+    <members>
+        <member name="M:CookingBlog.Api.Controllers.BlogsController.Get(CookingBlog.Application.UseCases.DTO.Searches.BlogSearch,CookingBlog.Application.UseCases.Queries.IGetBlogsQuery)">
+            <summary>
+            Searches a blog.
+            </summary>
+            <param name="request"></param>
+            <param name="query"></param>
+            <returns></returns>
+            <response code="400">Bad request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.BlogsController.Get(System.Int32,CookingBlog.Application.UseCases.Queries.IGetBlogQuery)">
+            <summary>
+            Findes a blog.
+            </summary>
+            <param name="id"></param>
+            <param name="query"></param>
+            <returns></returns>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.BlogsController.Post(CookingBlog.Application.UseCases.DTO.CreateBlogDto,CookingBlog.Application.UseCases.Commands.ICreateBlogCommand)">
+            <summary>
+            Creates new blog.
+            </summary>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="201">Successfull create.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="409">Confilct in the request</response>
+            <response code="422">Validation failure.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.BlogsController.Put(System.Int32,CookingBlog.Application.UseCases.DTO.UpdateBlogDto,CookingBlog.Application.UseCases.Commands.IUpdateBlogCommand)">
+            <summary>
+            Updates a blog.
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="422">Validation failure.</response>
+            <response code="409">Conflict in the request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.BlogsController.Delete(System.Int32,CookingBlog.Application.UseCases.Commands.IDeleteBlogCommand)">
+            <summary>
+            Deletes a blog.
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.CategoriesController.Get(CookingBlog.Application.UseCases.DTO.Searches.BasePageSearch,CookingBlog.Application.UseCases.Queries.IGetCategoriesQuery)">
+            <summary>
+            Searches a category.
+            </summary>
+            <param name="request"></param>
+            <param name="query"></param>
+            <returns></returns>
+            <response code="400">Bad request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.CategoriesController.Get(System.Int32,CookingBlog.Application.UseCases.Queries.IGetCategoryQuery)">
+            <summary>
+            Findes a category.
+            </summary>
+            <param name="id"></param>
+            <param name="query"></param>
+            <returns></returns>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.CategoriesController.Post(CookingBlog.Application.UseCases.DTO.CreateCategoryDto,CookingBlog.Application.UseCases.Commands.ICreateCategoryCommand)">
+            <summary>
+            Creates new category.
+            </summary>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="201">Successfull create.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="409">Confilct in the request</response>
+            <response code="422">Validation failure.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.CategoriesController.Put(System.Int32,CookingBlog.Application.UseCases.DTO.CreateCategoryDto,CookingBlog.Application.UseCases.Commands.IUpdateCategoryCommand)">
+            <summary>
+            Updates a category.
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="422">Validation failure.</response>
+            <response code="409">Conflict in the request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.CategoriesController.Delete(System.Int32,CookingBlog.Application.UseCases.Commands.IDeleteCategoryCommand)">
+            <summary>
+            Deletes a category.
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.CommentsController.Post(CookingBlog.Application.UseCases.DTO.CreateCommentDto,CookingBlog.Application.UseCases.Commands.ICreateCommentCommand)">
+            <summary>
+            Creates new comment.
+            </summary>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="201">Successfull create.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="409">Confilct in the request</response>
+            <response code="422">Validation failure.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.CommentsController.Put(System.Int32,CookingBlog.Application.UseCases.DTO.UpdateCommentDto,CookingBlog.Application.UseCases.Commands.IUpdateCommentCommand)">
+            <summary>
+            Updates a comment.
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="422">Validation failure.</response>
+            <response code="409">Conflict in the request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.CommentsController.Delete(System.Int32,CookingBlog.Application.UseCases.Commands.IDeleteCommentCommand)">
+            <summary>
+            Deletes a comment.
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.LikesController.Post(CookingBlog.Application.UseCases.DTO.LikeDto,CookingBlog.Application.UseCases.Commands.ICreateLikeCommand)">
+            <summary>
+            Addes new like.
+            </summary>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="201">Successfull create.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="409">Confilct in the request</response>
+            <response code="422">Validation failure.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.LikesController.Delete(System.Int32,CookingBlog.Application.UseCases.Commands.IDeleteLikeCommand)">
+            <summary>
+            Dislike.
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.MarksController.Post(CookingBlog.Application.UseCases.DTO.MarkDto,CookingBlog.Application.UseCases.Commands.ICreateMarkCommand)">
+            <summary>
+            Addes new mark.
+            </summary>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="201">Successfull create.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="409">Confilct in the request</response>
+            <response code="422">Validation failure.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.MarksController.Put(System.Int32,CookingBlog.Application.UseCases.DTO.UpdateMarkDto,CookingBlog.Application.UseCases.Commands.IUpdateMarkCommand)">
+            <summary>
+            Updates a mark.
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="422">Validation failure.</response>
+            <response code="409">Conflict in the request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.MarksController.Delete(System.Int32,CookingBlog.Application.UseCases.Commands.IDeleteMarkCommand)">
+            <summary>
+            Deletes a mark.
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.RegisterController.Post(CookingBlog.Api.DTO.RegisterApiDto,CookingBlog.Application.UseCases.Commands.IRegisterUserCommand)">
+            <summary>
+            Registers new user.
+            </summary>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="201">Successfull create.</response>
+            <response code="409">Confilct in the request</response>
+            <response code="422">Validation failure.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.RegisterController.Put(System.Int32,CookingBlog.Api.DTO.UpdateApiDto,CookingBlog.Application.UseCases.Commands.IUpdateUserCommand)">
+            <summary>
+            Updates a user.
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="422">Validation failure.</response>
+            <response code="409">Conflict in the request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.RegisterController.Delete(System.Int32,CookingBlog.Application.UseCases.Commands.IDeleteUserCommand)">
+            <summary>
+            Deletes a user.
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.TagsController.Get(CookingBlog.Application.UseCases.DTO.Searches.BaseSearch,CookingBlog.Application.UseCases.Queries.IGetTagsQuery)">
+            <summary>
+            Searches a tag.
+            </summary>
+            <param name="request"></param>
+            <param name="query"></param>
+            <returns></returns>
+            <response code="400">Bad request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.TagsController.Get(System.Int32,CookingBlog.Application.UseCases.Queries.IGetTagQuery)">
+            <summary>
+            Findes a tag.
+            </summary>
+            <param name="id"></param>
+            <param name="query"></param>
+            <returns></returns>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.TagsController.Post(CookingBlog.Application.UseCases.DTO.CreateTagDto,CookingBlog.Application.UseCases.Commands.ICreateTagCommand)">
+            <summary>
+            Creates new tag.
+            </summary>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="201">Successfull create.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="409">Confilct in the request</response>
+            <response code="422">Validation failure.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.TagsController.Put(System.Int32,CookingBlog.Application.UseCases.DTO.CreateTagDto,CookingBlog.Application.UseCases.Commands.IUpdateTagCommand)">
+            <summary>
+            Updates a tag.
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="422">Validation failure.</response>
+            <response code="409">Conflict in the request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.TagsController.Delete(System.Int32,CookingBlog.Application.UseCases.Commands.IDeleteTagCommand)">
+            <summary>
+            Deletes a tag.
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.TokenController.Post(CookingBlog.Api.Controllers.TokenRequest)">
+            <summary>
+            Creates new token.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+            <response code="201">Successfull create.</response>
+            <response code="409">Confilct in the request</response>
+            <response code="422">Validation failure.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.UseCaseLogsController.Get(CookingBlog.Application.UseCases.UseCaseLogSearch,CookingBlog.Application.UseCases.Queries.IGetUseCaseLogQuery)">
+            <summary>
+            Searches a use case log.
+            </summary>
+            <param name="search"></param>
+            <param name="query"></param>
+            <returns></returns>
+            <response code="400">Bad request.</response>
+            <response code="401">Unauthorized</response>
+            <response code="403">Forbbiden.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+        <member name="M:CookingBlog.Api.Controllers.UserUseCasesController.Put(CookingBlog.Application.UseCases.DTO.UpdateUserUseCasesDto,CookingBlog.Application.UseCases.Commands.IUpdateUserUseCasesCommand)">
+            <summary>
+            Updates a user use cases.
+            </summary>
+            <param name="dto"></param>
+            <param name="command"></param>
+            <returns></returns>
+            <response code="204">The server has successfully fulfilled the request.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="403">Forbbiden.</response>
+            <response code="404">Not found object.</response>
+            <response code="422">Validation failure.</response>
+            <response code="409">Conflict in the request.</response>
+            <response code="500">Unexcepted server error.</response>
+        </member>
+    </members>
+</doc>

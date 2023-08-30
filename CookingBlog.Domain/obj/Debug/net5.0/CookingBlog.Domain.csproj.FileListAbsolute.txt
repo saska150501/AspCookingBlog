@@ -1,0 +1,12 @@
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\bin\Debug\net5.0\CookingBlog.Domain.deps.json
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\bin\Debug\net5.0\CookingBlog.Domain.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\bin\Debug\net5.0\CookingBlog.Domain.pdb
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\CookingBlog.Domain.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\CookingBlog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\CookingBlog.Domain.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\CookingBlog.Domain.AssemblyInfo.cs
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\CookingBlog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\CookingBlog.Domain.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\refint\CookingBlog.Domain.dll
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\CookingBlog.Domain.pdb
+C:\Users\PC\source\repos\CookingBlog\CookingBlog.Domain\obj\Debug\net5.0\ref\CookingBlog.Domain.dll
